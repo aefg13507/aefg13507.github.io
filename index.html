@@ -1,182 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S A Mira - Ads Test</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #111;
-        color: #fff;
-    }
-
-    h1 {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .section {
-        border: 2px dashed #444;
-        margin: 40px auto;
-        padding: 20px;
-        width: 90%;
-        max-width: 1000px;
-        text-align: center;
-    }
-
-    .label {
-        margin-bottom: 15px;
-        font-weight: bold;
-        color: #00ffcc;
-    }
-
-    /* Fixed test containers */
-    .fixed-bottom {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #000;
-        padding: 10px 0;
-        text-align: center;
-        z-index: 9999;
-    }
-
-    .fixed-side {
-        position: fixed;
-        right: 0;
-        top: 100px;
-        z-index: 9999;
-    }
-
-    .spacer {
-        height: 200px;
-    }
-
-    a.smartlink {
-        display: inline-block;
-        padding: 10px 20px;
-        background: #ff0055;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S A Mira - Ad Testing Lab</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { text-align: center; color: #000; }
+        .test-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .ad-card {
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .ad-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #ccc;
+            color: #d32f2f;
+        }
+        .ad-slot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px; /* Ensures space exists even if ad loads slowly */
+            overflow: auto;
+        }
+        .smartlink-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>S A Mira - Ads Testing Page</h1>
+    <h1>S A Mira Ad Testing Page</h1>
+    <p style="text-align: center;">Site: aefg13507.github.io</p>
 
-<!-- Popunder -->
-<div class="section">
-    <div class="label">Popunder_1</div>
-    <script src="https://pl28696761.profitablecpmratenetwork.com/8d/43/85/8d4385553c009095db8534b56c34a7d5.js"></script>
-</div>
+    <div class="test-container">
 
-<!-- Native Banner -->
-<div class="section">
-    <div class="label">NativeBanner_1</div>
-    <script async data-cfasync="false" src="https://pl28696911.profitablecpmratenetwork.com/e021163f4bb01da3a026c46c44d37e59/invoke.js"></script>
-    <div id="container-e021163f4bb01da3a026c46c44d37e59"></div>
-</div>
+        <div class="ad-card" style="background: #e8f5e9;">
+            <span class="ad-label">Background Scripts (Popunder & Social Bar)</span>
+            <p>These units don't have a fixed box. Check for popups on click or the bar sliding in.</p>
+            <script src="https://pl28696761.profitablecpmratenetwork.com/8d/43/85/8d4385553c009095db8534b56c34a7d5.js"></script>
+            <script src="https://pl29228331.profitablecpmratenetwork.com/be/9e/27/be9e27e63d3198eb1d147d3a5371b7a7.js"></script>
+        </div>
 
-<!-- Social Bar -->
-<div class="section">
-    <div class="label">SocialBar_1</div>
-    <script src="https://pl29228331.profitablecpmratenetwork.com/be/9e/27/be9e27e63d3198eb1d147d3a5371b7a7.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Smartlink_1</span>
+            <div class="ad-slot">
+                <a href="https://www.profitablecpmratenetwork.com/dsknh58c7z?key=44643ed7d6d21ccf3976759f0ea9b4bf" target="_blank" class="smartlink-btn">Test Smartlink Click</a>
+            </div>
+        </div>
 
-<!-- Smartlink -->
-<div class="section">
-    <div class="label">Smartlink_1</div>
-    <a class="smartlink" href="https://www.profitablecpmratenetwork.com/dsknh58c7z?key=44643ed7d6d21ccf3976759f0ea9b4bf" target="_blank">
-        Click Here (Smartlink Test)
-    </a>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">NativeBanner_1</span>
+            <div class="ad-slot">
+                <script async="async" data-cfasync="false" src="https://pl28696911.profitablecpmratenetwork.com/e021163f4bb01da3a026c46c44d37e59/invoke.js"></script>
+                <div id="container-e021163f4bb01da3a026c46c44d37e59"></div>
+            </div>
+        </div>
 
-<div class="spacer"></div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_728x90_1</span>
+            <div class="ad-slot" style="min-height: 90px;">
+                <script>
+                    atOptions = { 'key' : '012f0acda21a4fc38a0341b885026d70', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/012f0acda21a4fc38a0341b885026d70/invoke.js"></script>
+            </div>
+        </div>
 
-<!-- 468x60 -->
-<div class="section">
-    <div class="label">Banner_468x60</div>
-    <script>
-        atOptions = {
-            'key' : '5e72c0eaedae42a244acfbdcba319da4',
-            'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
-            'params' : {}
-        };
-    </script>
-    <script src="https://www.highperformanceformat.com/5e72c0eaedae42a244acfbdcba319da4/invoke.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_468x60_1</span>
+            <div class="ad-slot" style="min-height: 60px;">
+                <script>
+                    atOptions = { 'key' : '5e72c0eaedae42a244acfbdcba319da4', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/5e72c0eaedae42a244acfbdcba319da4/invoke.js"></script>
+            </div>
+        </div>
 
-<!-- 300x250 -->
-<div class="section">
-    <div class="label">Banner_300x250</div>
-    <script>
-        atOptions = {
-            'key' : 'c1f453bc9648c9fbe5d0b01e33ec6be9',
-            'format' : 'iframe',
-            'height' : 250,
-            'width' : 300,
-            'params' : {}
-        };
-    </script>
-    <script src="https://www.highperformanceformat.com/c1f453bc9648c9fbe5d0b01e33ec6be9/invoke.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_300x250_1</span>
+            <div class="ad-slot" style="min-height: 250px;">
+                <script>
+                    atOptions = { 'key' : 'c1f453bc9648c9fbe5d0b01e33ec6be9', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/c1f453bc9648c9fbe5d0b01e33ec6be9/invoke.js"></script>
+            </div>
+        </div>
 
-<!-- 728x90 -->
-<div class="section">
-    <div class="label">Banner_728x90</div>
-    <script>
-        atOptions = {
-            'key' : '012f0acda21a4fc38a0341b885026d70',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script src="https://www.highperformanceformat.com/012f0acda21a4fc38a0341b885026d70/invoke.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_320x50_1</span>
+            <div class="ad-slot" style="min-height: 50px;">
+                <script>
+                    atOptions = { 'key' : '6d1254370f7f2ddd13351e3c27582ea3', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/6d1254370f7f2ddd13351e3c27582ea3/invoke.js"></script>
+            </div>
+        </div>
 
-<!-- Fixed Bottom (320x50) -->
-<div class="fixed-bottom">
-    <div class="label">Fixed Bottom Banner 320x50</div>
-    <script>
-        atOptions = {
-            'key' : '6d1254370f7f2ddd13351e3c27582ea3',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-        };
-    </script>
-    <script src="https://www.highperformanceformat.com/6d1254370f7f2ddd13351e3c27582ea3/invoke.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_160x600_1</span>
+            <div class="ad-slot" style="min-height: 600px;">
+                <script>
+                    atOptions = { 'key' : 'cf4db664e9527dee5d2a0a10a653eac6', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/cf4db664e9527dee5d2a0a10a653eac6/invoke.js"></script>
+            </div>
+        </div>
 
-<!-- Fixed Side (160x600) -->
-<div class="fixed-side">
-    <div class="label">Fixed Side 160x600</div>
-    <script>
-        atOptions = {
-            'key' : 'cf4db664e9527dee5d2a0a10a653eac6',
-            'format' : 'iframe',
-            'height' : 600,
-            'width' : 160,
-            'params' : {}
-        };
-    </script>
-    <script src="https://www.highperformanceformat.com/cf4db664e9527dee5d2a0a10a653eac6/invoke.js"></script>
-</div>
+        <div class="ad-card">
+            <span class="ad-label">Banner_160x300_1</span>
+            <div class="ad-slot" style="min-height: 300px;">
+                <script>
+                    atOptions = { 'key' : '3b2d6d39b0675c813390f2de63822034', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+                </script>
+                <script src="https://www.highperformanceformat.com/3b2d6d39b0675c813390f2de63822034/invoke.js"></script>
+            </div>
+        </div>
 
-<div class="spacer"></div>
+    </div>
 
 </body>
 </html>
