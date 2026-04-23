@@ -3,88 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BornoType Ad Tester</title>
+    <title>Ad Format Testing Lab</title>
     <style>
         body {
-            background: #0f172a; /* Dark background */
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 40px 20px;
+            margin: 0;
         }
-
-        .container {
+        .test-container {
             width: 100%;
-            max-width: 900px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            border: 1px solid #333;
+            background: #1e1e1e;
             padding: 20px;
+            border-radius: 8px;
             text-align: center;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
-
-        .ad-slot {
-            margin: 20px 0;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px dashed #4ade80; /* Green dashed border to see the ad area */
+        .ad-section {
+            margin: 30px 0;
+            padding: 15px;
+            border: 1px dashed #555;
             min-height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-
-        .label {
+        .unit-label {
+            display: block;
+            margin-bottom: 10px;
             font-size: 12px;
-            color: #4ade80;
-            margin-bottom: 5px;
+            color: #888;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
-
-        h1 { color: #4ade80; }
-        p { color: #94a3b8; }
+        .direct-link-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .direct-link-btn:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>BornoType Ad Testing Page</h1>
-        <p>Use this page to verify if your Adsterra units are active.</p>
+    <div class="test-container">
+        <h1>Ad Display Test Page</h1>
+        <p>Verifying script execution and container rendering.</p>
 
-        <div class="label">Unit 1: Top Banner (728x90)</div>
-        <div class="ad-slot">
-            <span>Waiting for 728x90 Banner...</span>
+        <script src="https://pl28696761.profitablecpmratenetwork.com/8d/43/85/8d4385553c009095db8534b56c34a7d5.js"></script>
+
+        <div class="ad-section">
+            <span class="unit-label">In-Page Container Unit</span>
+            <script async="async" data-cfasync="false" src="https://pl28696911.profitablecpmratenetwork.com/e021163f4bb01da3a026c46c44d37e59/invoke.js"></script>
+            <div id="container-e021163f4bb01da3a026c46c44d37e59"></div>
         </div>
 
-        <div style="height: 300px; border: 1px solid #334155; margin: 20px 0; display:flex; align-items:center; justify-content:center;">
-            Content Area (Simulated Converter Box)
+        <div class="ad-section">
+            <span class="unit-label">Secondary Script Unit</span>
+            <script src="https://pl29228331.profitablecpmratenetwork.com/be/9e/27/be9e27e63d3198eb1d147d3a5371b7a7.js"></script>
         </div>
 
-        <div class="label">Unit 2: Native Banner (4x1 Grid)</div>
-        <div class="ad-slot">
-            <span>Waiting for Native Ads...</span>
+        <div class="ad-section">
+            <span class="unit-label">Direct Ad Link (Button)</span>
+            <br>
+            <a href="https://www.profitablecpmratenetwork.com/dsknh58c7z?key=44643ed7d6d21ccf3976759f0ea9b4bf" target="_blank" rel="noopener" class="direct-link-btn">
+                Test Direct Link
+            </a>
+            <p style="font-size: 11px; margin-top: 10px; color: #666;">(Opens in new tab)</p>
         </div>
-
-        <div class="label">Unit 3: Rectangle (300x250)</div>
-        <div class="ad-slot">
-            <span>Waiting for 300x250 Banner...</span>
-        </div>
-
     </div>
 
-
-<script src="https://pl28696761.profitablecpmratenetwork.com/8d/43/85/8d4385553c009095db8534b56c34a7d5.js"></script>
-
-<script async="async" data-cfasync="false" src="https://pl28696911.profitablecpmratenetwork.com/e021163f4bb01da3a026c46c44d37e59/invoke.js"></script>
-<div id="container-e021163f4bb01da3a026c46c44d37e59"></div>
-
-<script src="https://pl29228331.profitablecpmratenetwork.com/be/9e/27/be9e27e63d3198eb1d147d3a5371b7a7.js"></script>
-https://www.profitablecpmratenetwork.com/dsknh58c7z?key=44643ed7d6d21ccf3976759f0ea9b4bf
-    
-    </body>
+</body>
 </html>
